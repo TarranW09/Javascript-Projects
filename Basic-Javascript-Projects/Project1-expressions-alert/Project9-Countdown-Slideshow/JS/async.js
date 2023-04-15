@@ -1,0 +1,1 @@
+alert(document.getElemtById)(p1).innerHTML;
