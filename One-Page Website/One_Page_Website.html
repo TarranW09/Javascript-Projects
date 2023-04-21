@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>One Page Website</title>
+		<meta charset="utf-8">
+		<script src="JS/one_page_website.js"></script>
+		<link href="/One-Page Website/CSS/one_page_website.css">
+	</head>
+	<body>
+	
+		<!--Nav-->
+		<div>
+			<div>
+				<u1>
+					<a href="#home" id="link"><li>HOME</li></a>
+					<a href="#images"><li>Images</li></a>
+					<a href="#contact"><li>Contact</li></a>
+					<a href="#videos"><li>Videos</li></a>
+					<a href="#footer"><li>Footer</li></a>
+				</u1>
+			</div>
+		</div>
+	
+		<!--End Nav-->
+		
+		<!--Home-->
+		<section>
+			<div id="home">
+				<div>
+					<div>
+						<span>Mother Natures Finest<span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--End Home-->
+		
+		<!--Images-->
+		<section>
+			<div id="images">
+				<h1>Here are some rarest insects!</h1>
+				<div>
+					<!--Image 1-->
+					<div>
+						<div>
+						<img src="/One-Page Website/images/Insect_1.jpg" height="300" width="300" alt="Rainbow cricket seen on a branch!"/>
+							<div>
+								<p>This was a very rare find, coulor pigmentation is unique.</p>
+							</div>
+						</div>
+					</div>
+					<!--End Image 1-->
+					
+					<!--Image 2-->
+					<div>
+						<div>
+						<img src="/One-Page Website/images/Insect_2.jpg" height="300" height="450" alt="Beautiful Orchid Mantis"/>
+							<div>
+								<p>Caught a wild Mantis out in its travels.</p>
+							</div>
+						</div>
+					</div>
+					<!--End Image 3-->
+					<div>
+					<img src="/One-Page Website/images/Insect_3.jpg" height="300" height="450" alt="Looks like an species of Alien bug"/>
+						<div>
+							<p>This bug definitely got hit hard with evolutiuon!</p>
+					</div>
+				</div>
+			</div>
+		</section>		
+		<!--End Images-->
+		
+		<!--Video-->
+		<section>
+		<h4>Check out this awesome video on the Insect Kingdom!</h4>
+			<div id="videos">
+				<div>
+					<div>
+						<center><<iframe width="560" height="315" src="https://www.youtube.com/embed/NaB--lU1KH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Images used to open the lightbox -->
+<div class="row">
+	<div class="column">
+	  <img src="/One-Page Website/images/Insect_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="/One-Page Website/images/Insect_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="/One-Page Website/images/Insect_3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="/One-Page Website/images/Insect_4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	</div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 4</div>
+		<img src="/One-Page Website/images/Insect_1.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 4</div>
+		<img src="/One-Page Website/images/Insect_2.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 4</div>
+		<img src="/One-Page Website/images/Insect_3.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">4 / 4</div>
+		<img src="/One-Page Website/images/Insect_4.jpg" style="width:100%">
+	  </div>
+  
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+  
+	  <!-- Thumbnail image controls -->
+	  <div class="column">
+		<img class="demo" src="/One-Page Website/images/Insect_1.jpg" onclick="currentSlide(1)" alt="Nature">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="/One-Page Website/images/Insect_2.jpg" onclick="currentSlide(2)" alt="Insect">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="/One-Page Website/images/Insect_3.jpg" onclick="currentSlide(3)" alt="Mantis">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="/One-Page Website/images/Insect_4.jpg" onclick="currentSlide(4)" alt="Bug">
+	  </div>
+	</div>
+  </div>
+		
+		
+					<!--Contact-->
+					<section>
+					<div id="contact">
+						<div>
+							<h1>Customer Support</h1>
+							<div>
+								<h2><span>If you reach any roadblocks contact here for support.</span></h2>
+								<p>Please provide your contact information so we can reach out!</p>
+								<div>
+									<form action="" method="post">
+										<input class="info" type="text" value="First Name">
+										<input class="info" type="text" value="Last Name">
+										<input class="info" type="text" value="Email">
+										<input class="info" type="text" value="Phone Number">
+										<div class="form-spacer">
+											<label class="terms">Terms and Condtions</label>
+										</div>
+										<div>
+											<input TYPE="submit" value="Submit">
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					</section>
+					<!--End Contact-->			
+					
+					<!--Footer-->
+					<div id="footer">
+						www.OnePageWebsite.practiceproject &nbsp; &copy; 2023
+					</div>
+	</body>			<!--End Footer-->
+</html>					
