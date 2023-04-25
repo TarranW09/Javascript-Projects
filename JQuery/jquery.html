@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+    <body>
+    <script>
+        //Wait Unitl the focument is loaded before running jquery
+        $(document).ready(function() {
+            //Selects the HTML element to append content
+            $("html").append(
+                //content to be added to the HTML element
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id ='1'>Paragrapgh 1</p>\
+                            <p id='2'>Paragrapgh 2</p>\
+                            <p id='3'>Paragrapgh 3</p>\
+                        </div>\
+                    </div>\
+                </body>"
+            );
+            //Using jQuery to add CSS too th HTML element with id = '2'
+            $("#2").css({"color":"red"});
+            //Click to hide the h1 element when the element with id = '3' is clicked
+            $("#3").click(function() {
+                $("h1").hide();
+            });
+        });
+        // Instantaneously hide all paragraphs
+$( "p" ).hide("slow");
+ 
+ // Instantaneously show all divs that have the hidden style class
+ $( "div.hidden" ).show("fast");
+         // Binding multiple events with different handlers
+ $( "p" ).on({
+     "click": function() { console.log( "clicked!" ); },
+     "mouseover": function() { console.log( "hovered!" ); }
+ });
+    </script>
+    </body>
+</html>
