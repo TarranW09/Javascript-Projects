@@ -4,7 +4,7 @@
 		<title>One Page Website</title>
 		<meta charset="utf-8">
 		<script src="JS/one_page_website.js"></script>
-		<link href="/One-Page Website/CSS/one_page_website.css">
+		<link href="CSS/one_page_website.css" rel="stylesheet">
 	</head>
 	<body>
 	
@@ -43,7 +43,7 @@
 					<!--Image 1-->
 					<div>
 						<div>
-						<img src="/One-Page Website/images/Insect_1.jpg" height="300" width="300" alt="Rainbow cricket seen on a branch!"/>
+						<img src="images/Insect_1.jpg" height="300" width="300" alt="Rainbow cricket seen on a branch!"/>
 							<div>
 								<p>This was a very rare find, coulor pigmentation is unique.</p>
 							</div>
@@ -54,7 +54,7 @@
 					<!--Image 2-->
 					<div>
 						<div>
-						<img src="/One-Page Website/images/Insect_2.jpg" height="300" height="450" alt="Beautiful Orchid Mantis"/>
+						<img src="images/Insect_2.jpg" height="300" height="450" alt="Beautiful Orchid Mantis"/>
 							<div>
 								<p>Caught a wild Mantis out in its travels.</p>
 							</div>
@@ -62,7 +62,7 @@
 					</div>
 					<!--End Image 3-->
 					<div>
-					<img src="/One-Page Website/images/Insect_3.jpg" height="300" height="450" alt="Looks like an species of Alien bug"/>
+					<img src="images/Insect_3.jpg" height="300" height="450" alt="Looks like an species of Alien bug"/>
 						<div>
 							<p>This bug definitely got hit hard with evolutiuon!</p>
 					</div>
@@ -83,74 +83,60 @@
 			</div>
 		</section>
 
-		<!-- Images used to open the lightbox -->
-<div class="row">
-	<div class="column">
-	  <img src="images/Insect_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
-	</div>
-	<div class="column">
-	  <img src="images/Insect_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
-	</div>
-	<div class="column">
-	  <img src="images/Insect_3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
-	</div>
-	<div class="column">
-	  <img src="images/Insect_4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
-	</div>
-  </div>
-  
-  <!-- The Modal/Lightbox -->
-  <div id="myModal" class="modal">
-	<span class="close cursor" onclick="closeModal()">&times;</span>
-	<div class="modal-content">
-  
-	  <div class="mySlides">
-		<div class="numbertext">1 / 4</div>
-		<img src="images/Insect_1.jpg" style="width:100%">
-	  </div>
-  
-	  <div class="mySlides">
-		<div class="numbertext">2 / 4</div>
-		<img src="images/Insect_2.jpg" style="width:100%">
-	  </div>
-  
-	  <div class="mySlides">
-		<div class="numbertext">3 / 4</div>
-		<img src="images/Insect_3.jpg" style="width:100%">
-	  </div>
-  
-	  <div class="mySlides">
-		<div class="numbertext">4 / 4</div>
-		<img src="images/Insect_4.jpg" style="width:100%">
-	  </div>
-  
-	  <!-- Next/previous controls -->
-	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  
-	  <!-- Caption text -->
-	  <div class="caption-container">
-		<p id="caption"></p>
-	  </div>
-  
-	  <!-- Thumbnail image controls -->
-	  <div class="column">
-		<img class="demo" src="images/Insect_1.jpg" onclick="currentSlide(1)" alt="Nature">
-	  </div>
-  
-	  <div class="column">
-		<img class="demo" src="images/Insect_2.jpg" onclick="currentSlide(2)" alt="Insect">
-	  </div>
-  
-	  <div class="column">
-		<img class="demo" src="images/Insect_3.jpg" onclick="currentSlide(3)" alt="Mantis">
-	  </div>
-  
-	  <div class="column">
-		<img class="demo" src="images/Insect_4.jpg" onclick="currentSlide(4)" alt="Bug">
-	  </div>
-	</div>
-  </div>
+		
+        <!-- Slideshow section added -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background"> 
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/Insect_1.jpg" alt="Picture of yourself">
+                        <div class="text">I'm available to assist you on your project!</div>
+                    </div>
+                    <!-- Slide 2 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/Insect_2.jpg" alt="HTML, CSS, and JS logos"> 
+                        <div class="text">Bugs so cool,<br> out here:<br>chilling,</div>
+                    </div>
+                    <!-- Slide 3 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/Insect_3.jpg" alt="Python logo">
+                        <div class="text"></div>
+                    </div>
+                    <!-- Slide 4 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/Insect_4.jpg" alt="Bug">
+                        <div class="text"></div>
+                    </div>
+                    <!-- Slide 5 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/SQL_and_Database.jpg" alt="Big bug"> 
+                        <div class="text"></div>
+                    </div>
+                    <!-- Slide 6 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="Images/tech.jpg" alt="Binary art"> 
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Bugs</a></div> 
+                    </div>
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- Adds a space between the slideshow images and the dots -->
+
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                </div>
+            </div>
+        </div>
+
+
 		
 		
 					<!--Contact-->
